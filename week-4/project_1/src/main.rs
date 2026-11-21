@@ -67,32 +67,33 @@ println!();
 // You have to split the real part and the part with imaginary number i
 // This is used when d is negative
 // For the first root
-let firstroot_1 = -b/2.0*a;// This is for the real part of the first root
-let firstroot_2 =d_1/2.0*a; // This is for the imaginary part of the first root
+let firstroot_1 = -b/(2.0*a);// This is for the real part of the first root
+let firstroot_2 =d_1/(2.0*a); // This is for the imaginary part of the first root
 println!(" The first root is {} + {}i",firstroot_1,firstroot_2);
 // this prevents the value of the first root showing NaN
 println!();
 
 // For the second root
-let secondroot_1 = -b/2.0*a;// This is for the real part of the second root
-let secondroot_2 =d_1/2.0*a; // This is for the imaginary part of the second root
+let secondroot_1 = -b/(2.0*a);// This is for the real part of the second root
+let secondroot_2 =d_1/(2.0*a); // This is for the imaginary part of the second root
 println!(" The second root is {} - {}i",secondroot_1,secondroot_2);
 // this prevents the value of the second root showing NaN
 }
 else if d> 0.0{
     let d_2 = d.sqrt();// This represents the (b^2 - (4ac))^1/2
 // This is used when d is positive
+println!("{}",d_2);
 
-let first_root = (-b+ d_2)/2.0*a;
-let second_root = (-b-d_2)/2.0*a;
+let first_root = (-b+ d_2)/(2.0*a);
+let second_root = (-b-d_2)/(2.0*a);
 println!("The first root is {}",first_root);
 println!("The second root is {}",second_root);
 }
 else if d==0.0 {
     let d_2 = d.sqrt();// This represents the (b^2 - (4ac))^1/2
 
-    let firstroot = (-b)/2.0*a;
-let secondroot = (-b)/2.0*a;
+    let firstroot = (-b)/(2.0*a);
+let secondroot = (-b)/(2.0*a);
 println!("The first root is {}",firstroot); // the same formula because d and d_1 is zero. it disappears in solution
 println!("The second root is {}",secondroot);// the same formula because d and d_1 is zero. it disappears in solution
 println!(" The roots are {} twice", firstroot);// conculsion

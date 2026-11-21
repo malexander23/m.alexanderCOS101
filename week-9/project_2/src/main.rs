@@ -2,7 +2,7 @@ use std::io;
 use std::io::Write;
 
 fn main(){
-    println!("Welcome, This iss a program that helps to backup student data\n");
+    println!("Welcome, This is a program that helps to backup student data\n");
 
 let mut count=0;
 let stud=String::new();
@@ -68,4 +68,4 @@ for i in 0..name.len(){
 
 }
 
-\\for i in 1..comm_1.len(){}
+

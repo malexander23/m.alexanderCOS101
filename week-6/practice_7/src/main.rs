@@ -8,6 +8,6 @@ fn main() {
     let a6 = "PAU".to_string();
     
     
-    let a7 = format!("{}{}{}{}{}{}",a1,a2,a3,a4,a5,a6);
+    let a7 =format!("{}{}{}{}{}{}",a1,a2,a3,a4,a5,a6);
     println!("\n {}",a7);
 }

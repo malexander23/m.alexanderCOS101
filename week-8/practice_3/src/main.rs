@@ -16,4 +16,5 @@ fn main() {
 
     let ch: Option<&char> = v.get(index);
     value(ch);
+    
 }
